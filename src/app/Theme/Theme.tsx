@@ -14,13 +14,10 @@ const manrope = Manrope({
   variable:'--font-manrope',
   display:'swap'
 });
-const font_array = [`${manrope}`,`${inter}`];
 export const Theme: MantineThemeOverride = {
   colors: {
     primary: ["#6b9eff", "#3c74ff", "#2c6fee", "#ff9b3e", "#3fdbb1", "#f0403719", "#f040371a", "#6720df", "#f86962", "#6b9eff21"],
   },
-  // fontFamily: `${inter} `,
-  // fontFamily: font_array,
   primaryColor: "primary",
   primaryShade: 7,
   breakpoints: {

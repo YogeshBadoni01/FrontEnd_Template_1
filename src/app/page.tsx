@@ -1,7 +1,3 @@
-import { BackgroundImage, Box, Center, Chip } from '@mantine/core'
-import Image from 'next/image'
-import { Theme } from './Theme/Theme'
-import Link from 'next/link'
 import Hero from './components/Hero'
 import ApplicationChoose from './components/ApplicationChoose'
 import ControlCustom from './components/ControlCustom'
@@ -22,7 +18,8 @@ export default function Home() {
     {/* <div className=" max-w-[1400px] mx-auto w-full relative px-[30px] " > */}
       <ApplicationChoose/>
       <ControlCustom/>
-      <div className="bg-red-500 rounded-ss-[900px] bg_section bg-opacity-5 pt-[100px]">
+      {/* <div className="bg-[#fcf6fa] rounded-ss-[900px] bg_section  pt-10 pb-[100px] md:pt-[60px] md:pb-[120px] lg:pb-[100px] xl:pt-[100px] xl:pb-[140px] xxl:pt-[140px] xxl:pb-[200px]"> */}
+      <div className="bg-[#fcf6fa] rounded-ss-[900px] bg_section  pt-10  md:pt-[60px] md:pb-[120px] lg:pb-[100px] xl:pt-[100px]  xxl:pt-[140px]   pb-[70px] hlg:pb-[90px] xl:pb-[120px] xxl:pb-[160px]">
           <EveryThingNeed/>
           <CustomerCarosal/>
       </div>

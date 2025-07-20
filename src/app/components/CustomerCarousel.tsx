@@ -4,7 +4,6 @@ import { Carousel } from '@mantine/carousel'
 import '@mantine/carousel/styles.css'
 import classes from './CustomerCarousel.module.css'
 import { FaArrowRight, FaStar } from 'react-icons/fa6'
-import { Button } from '@mantine/core'
 import Link from 'next/link'
 import { Theme } from '../Theme/Theme'
 
@@ -44,18 +43,21 @@ const CustomerCarosal = () => {
   return (
     <>
       <section className='container'>
-         <div className="pt-[75px] xl:pt-[150px] md:pt-[100px] pb-[160px] " id='Testmonial'>
+         {/* <div className="pt-[75px] xl:pt-[150px] md:pt-[100px] pb-[70px] hlg:pb-[90px] xl:pb-[120px] xxl:pb-[160px] " id='Testmonial'> */}
+         <div className="pt-[75px] xl:pt-[150px] md:pt-[100px]  " id='Testmonial'>
             <div className="heading mb-[80px] flex justify-center ">
-                <h2 className='text-[18px] md:text-[26px] font-bold'>What's client say about us</h2>
+                <h2 className='heading font-bold'>What's client say about us</h2>
             </div> 
-            <div className="xl:w-[1170px] lg:w-[910px] max-md:w-[690px]  sm:w-full m-auto -mb-[5px]">
+            <div className="xl:w-[1170px] lg:w-[910px] md:w-[690px]  w-full m-auto -mb-[5px]">
             <Carousel   classNames={classes}  loop withControls={false} onSlideChange={(index:number)=>{ScrollHandler(index)}} withIndicators >
               {
                 data.map((item,index)=>(
               <Carousel.Slide  key={index}>
                 <div className="bg-white mb-10">
 
-                  <div className="  grid grid-cols-6 max-lg:pt-[70px] md:pt-[90px] mb-[56px] md:pb-[73px] px-[46px] md:px-[80px] item-slide-up ">
+                  {/* <div className="  grid grid-cols-6 max-lg:pt-[70px] md:pt-[90px] mb-[56px] md:pb-[73px]  px-[20px] md:px-[80px] item-slide-up "> */}
+                  {/* <div className="  grid grid-cols-6 item-slide-up px-[25px] pt-[30px] pb-[26px] sm:px-[45px] sm:pt-[70px] sm:pb-[56px] min-[1200px]:px-20 min-[1200px]:pt-[90px] min-[1200px]:pb-[73px] "> */}
+                  <div className="  grid grid-cols-6 item-slide-up px-[25px] pt-[30px] pb-[26px] sm:px-[45px] sm:pt-[70px] sm:pb-[56px] lg:px-20 lg:pt-[90px] lg:pb-[73px] ">
 
                     <div className=" col-span-6 md:col-span-4 flex flex-col justify-center relative pt-4">
                         <div className="absolute -top-[45px] ">

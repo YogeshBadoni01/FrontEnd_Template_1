@@ -42,6 +42,17 @@
   color:  #3c74ff;
 }
 
+
+.link:first-child{
+  color:  #3c74ff;
+}
+
+.link:active ::before{
+  content: "0";
+  position: absolute;
+
+}
+
 .subLink {
   width: 100%;
   padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);

@@ -78,19 +78,20 @@ h1,h2,h3,h4,h5,h6{
 
 @keyframes skewAnimation {
   0% {
-    transform: skew(10deg, 10deg);
+    transform: skew(15deg, 0deg);
   }
   50% {
     transform: skewX(0deg);
   }
   100% {
-    transform: skew(-10deg, -10deg);
+    transform: skew(-15deg, 0deg);
   }
 }
 
 .myskew:hover {
-  animation: 0.2s skewAnimation  1ms   cubic-bezier(0.25, 0.1, 0.25, 1)  2 ;
+  animation: 0.2s skewAnimation  200ms   cubic-bezier(0.25, 0.1, 0.25, 1)  2 ;
   animation-timing-function: linear;
+  transform-origin: bottom center;
 }
 
 @keyframes slide-up {
@@ -143,6 +144,16 @@ h1,h2,h3,h4,h5,h6{
 @media (prefers-reduced-motion: no-preference) {
   .anim {
     animation: enter-animation 0.8s 1;
+  }
+}
+
+.heading{
+  font-size: 26px;
+  margin-inline: auto;
+}
+@media screen and (min-width: 0px) and (max-width:480 px) {
+  .heading {
+    font-size: 16px;
   }
 }
 

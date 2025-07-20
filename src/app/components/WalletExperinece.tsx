@@ -26,7 +26,7 @@ const WalletExperinece = () => {
                 <div className="flex flex-col justify-center text-center items-center lg:items-start lg:text-left basis-full  md:ml-[80px] md:min-w-[520px] order-1 md:order-2 m-auto ">
                     <p className=' mb-4 font-bold' style={{color:Theme.colors?.primary?.[3]}}>Ultimate wallet experience</p>
                     {/* <h2 className='2xl:text-[40px] text-[30px] font-extrabold leading-snug mb-4' style={{ fontFamily: `${Theme?.fontFamily}` }}> */}
-                    <h2 className='2xl:text-[40px] md:text-[30px] text-[18px] font-bold leading-snug  font-manrope mb-4' >
+                    <h2 className='xxl:text-[40px] md:text-[30px] text-[18px] font-bold leading-snug  font-manrope mb-4' >
                         Take your wallet experience to new ultimate level</h2>
                     <p className='opacity-70 mb-4 text-[16px] md:text-[18px]'>Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool.</p>
                     <ul className='mt-[30px] flex lg:flex-col md:flex-row flex-col max-w-[450px]'>

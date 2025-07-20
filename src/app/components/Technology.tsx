@@ -21,7 +21,7 @@ const Technology = () => {
               <div className="flex flex-col justify-center text-center items-center lg:items-start lg:text-left basis-full md:mt-[30px] md:ml-[80px] max-w-[534px] m-auto">
                 <p className=' mb-4 font-bold' style={{color:Theme.colors?.primary?.[3]}}>Technology based Community</p>
                 {/* <h2 className='2xl:text-[40px] text-[30px] font-extrabold leading-snug mb-4' style={{ fontFamily: `${Theme?.fontFamily}` }}> */}
-                <h2 className='2xl:text-[40px] md:text-[30px] text-[18px] font-bold leading-snug mb-4 font-manrope' >
+                <h2 className='xxl:text-[40px] md:text-[30px] text-[18px] font-bold leading-snug mb-4 font-manrope' >
                   Join our community by using our technology to grow up faster with our tools</h2>
                 <p className='opacity-70 mb-4 md:text-[16px] text-[18px] leading-[2.2] max-w-[470px]'>Our data centers have top-notch security and surveillance, with a reliable 99.9% uptime. Secure email hosting with encryption both at rest and end-to-end, along with S/MIME message encryption.</p>
               

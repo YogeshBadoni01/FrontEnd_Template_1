@@ -41,7 +41,7 @@ const Footer = () => {
   return (
     <>
         <div className="pt-[50px]">
-            <div className="xl:min-w-[1340px] min-[992px]:w-[970px] md:w-[750px]  mb-[30px] m-auto px-[30px]">
+            <div className="xl:min-w-[1340px] hlg:w-[970px] md:w-[750px]  mb-[30px] m-auto px-[30px]">
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5  max-xl:gap-[30px]">
                     
                     <div className="mr-[80px] max-md:col-span-2">
@@ -101,8 +101,8 @@ const Footer = () => {
                         <h4 className='text-[17px] mb-[25px] font-bold leading-7'>Contect Us</h4>
                         <ul>
                             <li className='text-sm leading-9 opacity-60'> 
-                                <Link href="#" className='flex justify-start items-center'>
-                                    <div className="">
+                                <Link href="#" className='flex justify-start items-start'>
+                                    <div className="mt-3">
                                         <FaLocationDot className="mr-3"/>
                                     </div>
                                     <div className="">
@@ -111,8 +111,8 @@ const Footer = () => {
                                 </Link>
                              </li>
                             <li className='text-sm leading-9 opacity-60'> 
-                                <Link href="#" className='flex justify-start items-center'>
-                                    <div className="">
+                                <Link href="#" className='flex justify-start items-start'>
+                                    <div className="mt-3">
                                         <MdCall className="mr-3"/>
                                     </div>
                                     <div className="">
@@ -122,8 +122,8 @@ const Footer = () => {
                                 </Link>
                              </li>
                             <li className='text-sm leading-9 opacity-60'> 
-                                <Link href="#" className='flex justify-start items-center'>
-                                    <div className="">
+                                <Link href="#" className='flex justify-start items-start'>
+                                    <div className="mt-3">
                                         <FaTelegramPlane className="mr-3"/>
                                     </div>
                                     <div className="">
@@ -135,7 +135,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="xl:min-w-[1340px] min-[992px]:w-[970px] md:w-[750px]  mb-[30px] m-auto mt-[60px] pt-10 pb-[45px]">
+            <div className="xl:min-w-[1340px] hlg:w-[970px] md:w-[750px]  mb-[30px] m-auto mt-[60px] pt-10 pb-[45px]">
             {/* <div className="mt-[60px] pt-10 pb-[45px]"> */}
                 <div className="text-base flex flex-row justify-between max-lg:flex-col gap-[30px] max-lg:text-center px-[30px] ">
                     <p className=''>Copyright © 2021 Superprops. All rights reserved</p>

@@ -26,7 +26,7 @@
   height: rem(9px);
   transition: width 250ms ease;
   background-color: gray;
-  margin-bottom: -135px !important; /* You have two margin-bottom declarations, you might want to remove one */
+  margin-bottom: -135px !important; 
   
   &[data-active] {
     width: rem(18px);
@@ -34,13 +34,11 @@
     background-color: black;
   }
   
-  /* Use more specific selectors if needed */
 }
-/* Custom styles for the Carousel indicators */
 .mantine-Carousel-indicators {
   position: relative;
   bottom: auto;
-  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-top: 20px;
   text-align: center;
 }
 

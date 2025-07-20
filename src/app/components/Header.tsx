@@ -32,10 +32,116 @@ export function Header() {
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
     const [active, setActive] = useState(true)
     const [list, setList] = useState(true)
-    const theme = useMantineTheme();
+    // const theme = useMantineTheme();
   
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [currentMenuItem, setCurrentMenuItem] = useState<String>('');
+//     const [isScrolled, setIsScrolled] = useState(false);
+//     const [currentMenuItem, setCurrentMenuItem] = useState<String>('');
+//     const templink=true
+
+//      const handleScroll = () => {
+//   let current = "";
+//       setIsScrolled(!isScrolled)
+//   data.forEach((item) => {
+//     const sectionId = `#${item.menu}`;
+//     const section = document.querySelector(sectionId) as HTMLElement; // Type assertion
+
+//     if (section) {
+//       const sectionTop = section.offsetTop;
+//       if (window.scrollY >= sectionTop) {
+//         current = item.menu;
+//       }
+//     }
+//   });
+
+//   data.forEach((item) => {
+//     const link = document.querySelector(`#${item.menu}-links`);
+//     if (link) {
+//       // link.classList.remove("active");
+
+//       if (item.menu === current) {
+//         link.classList.add("active");
+//       }
+//     }
+//   });
+// };
+
+// // useEffect(() => {
+// //   if(window.scrollY>40){
+// //     setIsScrolled(window.scrollY > 40);
+// //     window.addEventListener('scroll', handleScroll);
+// //   }
+// //   else{
+// //     document.querySelector(`#$`)classList.remove()
+// //   }
+// //   return () => {
+// //     window.removeEventListener('scroll', handleScroll);
+// //   };
+// // }, []);
+
+// useEffect(() => {
+//   setIsScrolled(window.scrollY > 40);
+//   window.addEventListener('scroll', handleScroll);
+//   // if(window.scrollY<40){
+//   //   // document.querySelector(".myshadow")?.classList.remove("shadow-md")
+//   //   setIsScrolled(!isScrolled)
+//   // }
+
+//   document.addEventListener("DOMContentLoaded", function() {
+//     const sections = document.querySelectorAll(".animate");
+
+//     function checkScroll() {
+//       sections.forEach(section => {
+//         const distance = section.getBoundingClientRect().top;
+//         const windowHeight = window.innerHeight;
+
+//         if (distance < windowHeight * 0.75) {
+//           section.classList.add("visible");
+//         } else {
+//           section.classList.remove("visible");
+//         }
+//       });
+//     }
+
+//     window.addEventListener("scroll", checkScroll);
+//     checkScroll(); // Call initially to check if elements are in view on page load
+//   });
+  
+//   return () => {
+//     window.removeEventListener('scroll', handleScroll);
+//   };
+// }, []);
+
+//this is correct which is in downword
+// useEffect(() => {
+//   setIsScrolled(window.scrollY > 40);
+//   window.addEventListener('scroll', handleScroll);
+//   // if(window.scrollY<40){
+//   //   // document.querySelector(".myshadow")?.classList.remove("shadow-md")
+//   //   setIsScrolled(!isScrolled)
+//   // }
+
+//   document.addEventListener("DOMContentLoaded", function() {
+//     const sections = document.querySelectorAll(".animate");
+
+//     function checkScroll() {
+//       sections.forEach(section => {
+//         const distance = section.getBoundingClientRect().top;
+//         const windowHeight = window.innerHeight;
+
+//         if (distance < windowHeight * 0.75) {
+//           section.classList.add("visible");
+//         } else {
+//           section.classList.remove("visible");
+//         }
+//       });
+//     }
+
+//     window.addEventListener("scroll", checkScroll);
+//     checkScroll(); // Call initially to check if elements are in view on page load
+//   })});
+
+const [isScrolled, setIsScrolled] = useState(false);
+    // const [currentMenuItem, setCurrentMenuItem] = useState<String>('');
     const templink=true
 
      const handleScroll = () => {
@@ -43,7 +149,7 @@ export function Header() {
       setIsScrolled(!isScrolled)
   data.forEach((item) => {
     const sectionId = `#${item.menu}`;
-    const section = document.querySelector(sectionId) as HTMLElement; // Type assertion
+    const section = document.querySelector(sectionId) as HTMLElement; 
 
     if (section) {
       const sectionTop = section.offsetTop;
@@ -65,26 +171,10 @@ export function Header() {
   });
 };
 
-// useEffect(() => {
-//   if(window.scrollY>40){
-//     setIsScrolled(window.scrollY > 40);
-//     window.addEventListener('scroll', handleScroll);
-//   }
-//   else{
-//     document.querySelector(`#$`)classList.remove()
-//   }
-//   return () => {
-//     window.removeEventListener('scroll', handleScroll);
-//   };
-// }, []);
-
 useEffect(() => {
   setIsScrolled(window.scrollY > 40);
   window.addEventListener('scroll', handleScroll);
-  // if(window.scrollY<40){
-  //   // document.querySelector(".myshadow")?.classList.remove("shadow-md")
-  //   setIsScrolled(!isScrolled)
-  // }
+  
 
   document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".animate");
@@ -95,7 +185,7 @@ useEffect(() => {
         const windowHeight = window.innerHeight;
 
         if (distance < windowHeight * 0.75) {
-          section.classList.add("visible");
+          section.classList.add("visible mb-[50px]");
         } else {
           section.classList.remove("visible");
         }
@@ -103,20 +193,15 @@ useEffect(() => {
     }
 
     window.addEventListener("scroll", checkScroll);
-    checkScroll(); // Call initially to check if elements are in view on page load
-  });
+    checkScroll();
+  })});
   
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
-
 
     
     return (
       <div className="">
 
-      <div className={`myshadow  md:px-0 fixed w-full top-0 bg-white z-[998] font-medium ${isScrolled ? 'customeShadow py-[15px]' : 'pb-[30px] pt-[15px] '}`}>
+      <div className={`myshadow  md:px-0 fixed w-full top-0 bg-white z-[9] font-medium ${isScrolled ? 'customeShadow py-[15px]' : 'pb-[30px] pt-[15px] '}`}>
       <Box className='container mx-auto max-w-[1340px] text-base border-none' h="100%">
         <header className={`${classes.header} lg:max-w-full max-w-[970px] m-auto`}>
           <Group h="100%" className='lg:justify-center' gap={0}>
@@ -144,6 +229,56 @@ useEffect(() => {
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" className='ml-auto' />
           </Group>
         </header>
+        <Drawer
+        opened={drawerOpened}
+        onClose={closeDrawer}
+        // title="Menu"
+        hiddenFrom="lg"
+        zIndex={500}
+        position='right'
+        padding={"20px"}
+        size={300}
+        c="black"
+        style={{background:"white"}}
+        bg="white"
+        // fs={lg}
+        h="100%"
+      >
+        {/* <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md"  > */}
+        <ScrollArea h="100vh" mx="-md"  >
+         <Flex justify="space-between" mb={30} pb="xl" px="lg"  direction={'column'} color='white' h="100vh">
+           
+            <Flex gap={"10px"} direction={'column'}  pb="xl" px="lg" >
+              {
+                data.map((item,index)=>(
+                  
+                  <Link href={`#${item.menu}`} key={index} id={`#${item.menu}-links`} className={classNames(classes.link, ` hover:text-[#3c74ff] text-[18px]  {${active}? text-[#3c74ff]: first:text-[#3c74ff]" } `)} onClick={()=>{setActive(!active); setList(!list)}}>
+                {  list &&!active  ? <FaCircle className="text-[#3c74ff]"/>: null}
+                  {item?.menu}
+              </Link>
+                ))
+              }
+
+            </Flex>
+        <div className="mt-auto mb-[30px]">
+
+            <Flex gap={"25px"} justify={'space-between'} align={'baseline'} direction={'row'} fs={"16px"} className='mt-auto mb-0' pb="xl" px="lg" h="100%">
+             
+              <Link href="" className='flex justify-center items-center md:text-[13px] lg:text-base hover:text-[#3c74ff]'>
+                <CiUnlock className=" "/>
+                 Login Now
+              </Link>
+              <Link href="" className='flex justify-center items-center md:text-[13px] lg:text-base hover:text-[#3c74ff]'>
+                 Join Free
+              </Link>
+
+            </Flex>
+        </div>
+        </Flex>
+         
+        </ScrollArea> 
+        
+      </Drawer>
 
       </Box>
     </div>

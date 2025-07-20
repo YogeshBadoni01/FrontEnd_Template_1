@@ -27,7 +27,7 @@ const PicingPlan = () => {
     
     const plans = [
         {
-            planName:"Starter plan",
+            planName:"Starter Plan",
             Monthlyprice:19,
             Yearlyprice:228,
             price:19,
@@ -39,7 +39,7 @@ const PicingPlan = () => {
 
         },
         {
-            planName:"Business plan",
+            planName:"Business Plan",
             Monthlyprice:49,
             Yearlyprice:588,
             price:49,
@@ -52,10 +52,11 @@ const PicingPlan = () => {
         },
     ]
   return (
-    <div className='home pt-[40px] md:pt-[40px] xl:pt-[100px] 2xl:pt-[126px] xl:pb-[150px] pb-[90px] font-inter' id='Pricing'>
+    // <div className='home pt-[40px] md:pt-[40px] xl:pt-[100px] 2xl:pt-[126px] xl:pb-[150px] pb-[90px] font-inter' id='Pricing'>
+    <div className='home pt-[40px] md:pt-[40px] xl:pt-[100px] xxl:pt-[126px] xl:pb-[150px] pb-[90px] font-inter px-1' id='Pricing'>
         <div className=" mb-[34px] flex justify-center items-center flex-col m-auto max-w-[440px] text-center">
             <div className=" mb-[34px] mx-auto">
-                <h2 className='text-[18px] md:text-[26px] font-bold leading-9 mb-4'>Meet exciting Pricing Plans</h2>
+                <h2 className='heading  font-bold leading-9 mb-4'>Meet exciting Pricing Plans</h2>
                 <p className='md:text-[16px] text-[18px] opacity-70 leading-[2.125]'>Create custom landing pages with us so that converts more visitors than any website.</p>
             </div>
             <div className="flex justify-center items-center gap-[17px]">
@@ -72,7 +73,7 @@ const PicingPlan = () => {
                 </div>
             </div>
             
-            <div className="m-auto w-full xl:mb-[-394px] pt-[40px] md:pt-[40px] xl:pt-[100px] 2xl:pt-[126px] ">
+            <div className="m-auto w-full xl:mb-[-394px] pt-[40px] md:pt-[40px] xl:pt-[100px] xxl:pt-[126px] ">
                 <div className=" ">
 
                     <div className=" flex flex-row items-center md:justify-center  justify-start  md:gap-[40px] gap-[30px] overflow-x-scroll md:overflow-visible ">
@@ -86,17 +87,16 @@ const PicingPlan = () => {
                                         <div className="text-[14px] md:text-[18px] xl:text-sm w-full xl:py-[34px] xl:px-[95px] lg:px-[30px] lg:py-[30px] px-[20px] py-[20px]">
                                                 
                                             <div className="mb-[46px]">
-                                                <h3 className='text-[20px] mb-4  block font-manrope' style={{color:theme?.colors?.primary?.[0]}}>{item.planName}</h3>
+                                                <h3 className='text-[20px] mb-4  block font-manrope leading-[1.35]' style={{color:theme?.colors?.primary?.[0]}}>{item.planName}</h3>
                                                 <div className='text-[30px] mb-2.5 block md:leading-[80px] leading-none font-medium'>
                                                     <span>$</span>
-                                                    <span className='2xl:text-[80px] xl:text-[50px]  md:text-[30px] inline-block  '>{price?`${item.Monthlyprice}`:`${item.Yearlyprice}`}</span>
-
+                                                    <span className='xxl:text-[80px] xl:text-[50px]  md:text-[30px] inline-block  '>{price?`${item.Monthlyprice}`:`${item.Yearlyprice}`}</span>
                                                     
                                                     <span>/mo</span>
                                                 </div>
                                                 <p className='mb-4 opacity-80 text-[18px]'>Per user</p>
                                             </div>
-                                            <ul>
+                                            <ul className='last:-mb-[21px]'>
                                                 <li className='flex flex-row justify-start items-center mb-[21px] 21px] text-[16px] md:text-[18px] '>
                                                     <FaCheck className="mr-3 w-[30px] h-[30px] p-1.5 opacity-70" style={{color:theme?.colors?.primary?.[0],background:theme?.colors?.primary?.[9]}} /> 
                                                     <span>{item.feature1}</span> 

@@ -84,15 +84,15 @@ const EveryThingNeed = () => {
     ]
   return (
     <>
-    <section className="container">
+    <section className="container ">
         <div className="heading mb-[80px] flex justify-center">
-            <h2 className='text-[18px] md:text-[26px] font-semibold'>It’s everything you’ll ever need</h2>
+            <h2 className='heading font-semibold'>It’s everything you’ll ever need</h2>
         </div>  
 
         <div className="Gridlist max-w-[1100px] mx-auto">
-            <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[25px]">
+            <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-3  gap-[25px]">
                 {data.map((item, index) => (
-                <div key={index} className={`flex flex-row justify-start items-center gap-[25px] p-3 rounded-full   border transition-all ease-in-out duration-300 cursor-pointer  item-slide-up font-bold text-[18px]   ${(index >= 3 && index <= 5) ? 'lg:grid-row-start-2 lg:grid-row-end-3 lg:transform lg:-translate-x-12' : ''}`} 
+                <div key={index} className={`flex flex-row justify-start items-center gap-[25px] p-3 rounded-full   border transition-all ease-in-out duration-300 cursor-pointer  item-slide-up font-bold text-[18px]   ${(index >= 3 && index <= 5) ? 'xl:grid-row-start-2 xl:grid-row-end-3 xl:transform xl:-translate-x-20' : ''}`} 
                 // style={{background:`${hoverEffect && active ?`${item.color} ${!active}`:`${!hoverEffect}`}`}} 
                 // onMouseEnter={()=>{setHoverEffect(!hoverEffect)}}
                 style={{ background: hoverEffect && index === selectedIndex ? item.color : 'white' }}

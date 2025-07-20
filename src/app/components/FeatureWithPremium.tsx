@@ -26,9 +26,9 @@ const FeatureWithPremium = () => {
     ]
   return (
     <>
-        <div className=" bg-black xl:pt-[195px] pt-[0px] px[30px]" >
-            <div className="min-[992px]:max-w-[1170px] md:max-w-[970px] max-w-[750px] m-auto pt-[150px] px-[30px] ">
-                <ul className='grid md:grid-cols-2 grid-cols-1 gap-y-[66px] gap-x-[140px]'>
+        <div className=" bg-[#19191B] xl:pt-[195px] pt-[0px] px[30px]" >
+            <div className="lg:max-w-[1170px] md:max-w-[970px] max-w-[750px] m-auto pt-[150px] px-[30px] ">
+                <ul className='grid md:grid-cols-2 grid-cols-1 gap-y-[66px] gap-x-[140px] pb-[70px]'>
                     {
                         data.map((item,index)=>(
                             <li className='flex justify-start items-start text-white item-slide-up' key={index}>
@@ -44,17 +44,17 @@ const FeatureWithPremium = () => {
                     }
                   
                 </ul>
-                <div className="pt-[45px] pb-[60px] text-white text-center" id='Contect us'>
+                <div className="pt-[45px] xl:pb-[100px] pb-[60px] text-white text-center" id='Contect us'>
                     <div className=" px-[30px] m-auto">
-                        <div className="pt-[102px] m-auto w-full">
-                            <h2 className='mb-[15px] mx-auto text-lg md:text-[28px] lg:text-[32px] font-bold'>Explore ultimate feature with premium</h2>
-                            <p className='opacity-70 leading-loose max-w-[575px] mx-auto mb-[41px]'>Tell us your Apple ID email address so we could send you a TestFlight invitation directly.</p>
+                        <div className="border-t-[1px] border-solid border-white pt-[102px] m-auto w-full">
+                            <h2 className='mb-[15px] mx-auto text-lg md:text-[28px] lg:text-[32px]  xxl:text-[45px] font-bold leading-[1.53]'>Explore ultimate feature with premium</h2>
+                            <p className='opacity-70 leading-loose max-w-[575px] mx-auto mb-[41px] xxl:text-[20px]'>Tell us your Apple ID email address so we could send you a TestFlight invitation directly.</p>
                             
-                            <Link href="" className={` m-auto px-[30px] py-[22px] rounded-full font-bold inline-block transition-all ease-in-out duration-200 bg-[#6b9eff] hover:bg-[#3c74ff]`}  >
+                            <Link href="" className={` m-auto px-[30px] py-[22px] rounded-full font-bold inline-block transition-all ease-in-out duration-200 bg-[#6b9eff] hover:bg-[#3c74ff] text-[16px]`}  >
                                 <span>Start 14 Days Free Trial</span>
                             </Link>
 
-                            <span className='block opacity-60 mt-[17px]'>No credit card required</span>
+                            <span className='block opacity-60 mt-[17px] text-[14px]'>No credit card required</span>
                         </div>
                     </div>
                 </div>
