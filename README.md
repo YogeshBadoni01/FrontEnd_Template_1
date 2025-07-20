@@ -1,5 +1,6 @@
 <<<<<<< HEAD
-# My Awesome Task Management App
+# My front end template
+
 
 
 ## Table of Contents
