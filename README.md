@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Awesome Task Management App
 
 
@@ -103,3 +104,7 @@ Project Link: [taskMangement](https://github.com/YogeshBadoni01/FrontEnd_Templat
 - [Material-UI](https://mui.com/)
 - [tailwindcss](https://https://tailwindcss.com/)
 - [And all other dependencies listed in `package.json`](./package.json)
+=======
+# FrontEnd_Template_1
+This is a Template/ Landing page.
+>>>>>>> c6a5904fd3407ff827ae84c7dc5528b0e37fc472
