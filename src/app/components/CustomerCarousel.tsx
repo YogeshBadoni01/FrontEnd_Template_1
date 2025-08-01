@@ -56,7 +56,8 @@ const CustomerCarosal = () => {
 
                    {/* <div className="   grid grid-cols-6 max-lg:pt-[70px] md:pt-[90px] mb-[56px] md:pb-[73px]   px-[20px] md:px-[80px] item-slide-up "> */}
                    {/* <div className="   grid grid-cols-6 item-slide-up px-[25px] pt-[30px] pb-[26px] sm:px-[45px] sm:pt-[70px] sm:pb-[56px] min-[1200px]:px-20 min-[1200px]:pt-[90px] min-[1200px]:pb-[73px] "> */}
-                   <div className="   grid grid-cols-6 item-slide-up px-[25px] pt-[30px] pb-[26px] sm:px-[45px] sm:pt-[70px] sm:pb-[56px] lg:px-20 lg:pt-[90px] lg:pb-[73px] ">
+                   <div className="   grid grid-cols-6 item-slide-up px
+                   -[25px] pt-[30px] pb-[26px] sm:px-[45px] sm:pt-[70px] sm:pb-[56px] lg:px-20 lg:pt-[90px] lg:pb-[73px] ">
 
                      <div className=" col-span-6 md:col-span-4 flex flex-col justify-center relative pt-4">
                          <div className="absolute -top-[45px] ">
