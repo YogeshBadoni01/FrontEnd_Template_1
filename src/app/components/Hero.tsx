@@ -1,6 +1,7 @@
 import { BackgroundImage, Box, Center, Chip } from '@mantine/core'
 import { FaAngleRight } from 'react-icons/fa6'
 import Header from './Header'
+import Image from 'next/image'
 
 
 
@@ -27,10 +28,11 @@ export default function Hero() {
               </div>
               <div className="flex gap-5 justify-center lg:justify-start">
                 <div className="">
-                  <img src='Image/hero/googleplay.png' className='cursor-pointer'/>
+                  {/* <img src='Image/hero/googleplay.png' className='cursor-pointer'/> */}
+                  <Image  src='/Image/hero/googleplay.png' alt="googleplay" className='cursor-pointer' width={166} height={54}/>
                 </div>
                 <div className="">
-                  <img src='Image/hero/applestore.png' className='cursor-pointer'/>
+                  <Image src='/Image/hero/applestore.png' alt="applestore" className='cursor-pointer' width={166} height={54}/>
                 </div>
               </div>
           </div>
@@ -47,12 +49,13 @@ export default function Hero() {
         <div className="   -mr-[71px] ml-[71px] ">
 
             <div className=" hidden hlg:flex max-w-full overflow-hidden relative">
-            <img
-              src="Image/hero/banner_image.webp"
+            <Image
+              src="/Image/hero/banner_image.webp"
               alt="bannerImg"
               className="w-full h-auto md:h-full max-w-[700px]  hlg:h-[522px] hlg:w-[410px]  lg:h-full lg:w-full "
-              width={"100%"}
-              height={"100%"}
+              width={700}
+              height={700}
+              // layout='fill'
             />
           </div>
         </div>

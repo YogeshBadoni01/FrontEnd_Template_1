@@ -206,7 +206,8 @@ useEffect(() => {
         <header className={`${classes.header} lg:max-w-full max-w-[970px] m-auto`}>
           <Group h="100%" className='lg:justify-center' gap={0}>
             <Link href="https://superprops-next.vercel.app/appcreative2">
-              <img src='/Image/header/logo.png' alt='Logo' className=' max-w-[148px]' />
+              {/* <img src='/Image/header/logo.png' alt='Logo' className=' max-w-[148px]' /> */}
+              <Image src='/Image/header/logo.png' alt='Logo' className=' max-w-[148px]' width={148} height={61}/>
             </Link>
 
             <Group h="100%" gap={0} visibleFrom="md" className={`ml-[75px] ` } >
@@ -219,7 +220,8 @@ useEffect(() => {
 
             <Group visibleFrom="md" className='xl:ml-auto'>
               <Link href="" className={`flex justify-center items-center md:text-[13px] lg:text-base hover:text-[#6b9eff]`} >
-                <img src='Image/header/lock.png' className='mr-[9px]' />
+                {/* <img src='Image/header/lock.png' className='mr-[9px]' /> */}
+                <Image src='/Image/header/lock.png' alt='login' className='mr-[9px]' width={15} height={20}  />
                 Login Now
               </Link>
 

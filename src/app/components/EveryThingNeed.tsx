@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { Theme } from '../Theme/Theme'
+import Image from 'next/image'
 
 
 const theme = Theme
@@ -101,7 +102,7 @@ const EveryThingNeed = () => {
                 >
 
                     <div className="p-[14px] ml-4 rounded-full " style={{ background: item.color }}>
-                        <img src={item.icon} alt={item.text} />
+                        <Image src={item.icon} alt={item.text} width={26} height={26} objectFit='cover'/>
                     </div>
                     <p>{item.text}</p>
                 </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdCall } from 'react-icons/md'
 import { FaTelegramPlane } from 'react-icons/fa'
+import Image from 'next/image'
 
 const Footer = () => {
     const data = [
@@ -46,7 +47,8 @@ const Footer = () => {
                     
                     <div className="mr-[80px] max-md:col-span-2">
                         <Link href="#" className='mb-[25px] inline-block'>
-                            <img src="/Image/footer/logo.png" alt="logo" />
+                            {/* <img src="/Image/footer/logo.png" alt="logo" /> */}
+                            <Image  src="/Image/footer/logo.png" alt="logo" width={148} height={61} />
                         </Link>
                         <p className='text-[15px] leading-loose'>We run Advanced Search reports on the criteria you care about to see how work is progressing and where to focus your effort.</p>
                     </div>
@@ -149,13 +151,13 @@ const Footer = () => {
                         <span>Social:</span>
                         <ul className='flex'>
                             <li className='ml-[15px]'> <Link href="http://facebook.com">
-                                <img src="Image/Social/facebook.png" alt="facebook" />
+                                <Image src="/Image/Social/facebook.png" alt="facebook" width={25} height={25} />
                             </Link></li>
                             <li className='ml-[15px]'> <Link href="http://twitter.com">
-                                <img src="Image/Social/twitter.png" alt="twitter" />
+                                <Image src="/Image/Social/twitter.png" alt="twitter" width={25} height={25} />
                                 </Link></li>
                             <li className='ml-[15px]'> <Link href="http://dribbble.com">
-                                <img src="Image/Social/dribbble.png" alt="dribbble" />
+                                <Image src="/Image/Social/dribbble.png" alt="dribbble" width={25} height={25} />
                                 </Link>
                             </li>
                         </ul>

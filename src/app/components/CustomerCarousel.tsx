@@ -45,7 +45,7 @@ const CustomerCarosal = () => {
            {/* <div className="pt-[75px] xl:pt-[150px] md:pt-[100px] pb-[70px] hlg:pb-[90px] xl:pb-[120px] xxl:pb-[160px] " id='Testmonial'> */}
            <div className="pt-[75px] xl:pt-[150px] md:pt-[100px]  " id='Testmonial'>
              <div className="heading mb-[80px] flex justify-center ">
-                 <h2 className='heading font-bold'>What&apos;s client say about us</h2> {/* <-- FIXED APOSTROPHE HERE */}
+                 <h2 className='heading font-bold'>What&apos;s client say about us</h2> 
              </div>
              <div className="xl:w-[1170px] lg:w-[910px] md:w-[690px]  w-full m-auto -mb-[5px]">
              <Carousel   classNames={classes}   loop withControls={false} onSlideChange={(index:number)=>{ScrollHandler(index)}} withIndicators >
@@ -61,7 +61,6 @@ const CustomerCarosal = () => {
 
                      <div className=" col-span-6 md:col-span-4 flex flex-col justify-center relative pt-4">
                          <div className="absolute -top-[45px] ">
-                           {/* Changed img to Image - assuming a reasonable width/height, adjust as needed */}
                            <Image src={item.comma} alt='Decorative comma' width={50} height={50} />
                          </div>
 
@@ -69,7 +68,6 @@ const CustomerCarosal = () => {
 
                          <div className="flex justify-start items-center gap-[10px]">
                                <div className="md:hidden ">
-                                 {/* Changed img to Image - assuming a reasonable width/height, adjust as needed */}
                                  <Image src={item.PersonImg} alt={item.person} className='w-[75px] h-[75px] rounded-full' width={75} height={75}/>
                                </div>
                              <div className="">
@@ -79,9 +77,7 @@ const CustomerCarosal = () => {
                                </div>
 
                                <div className="">
-                                 {/* Changed img to Image - assuming a reasonable width/height, adjust as needed */}
-                                 <Image src={item.logo} alt={`${item.OfficeName} logo`}  className='max-w-[130px] ' width={130} height={40} /> {/* Adjust height based on aspect ratio */}
-                               </div>
+                                 <Image src={item.logo} alt={`${item.OfficeName} logo`}  className='max-w-[130px] ' width={130} height={40} />                                </div>
                              </div>
                          </div>
                      </div>
@@ -96,7 +92,6 @@ const CustomerCarosal = () => {
                              <FaStar className="text-yellow-400 text-[22px] mr-1"/>
                        </div>
                        <div className="rounded-full">
-                         {/* Changed img to Image - assuming a reasonable width/height, adjust as needed */}
                          <Image src={item.PersonImg} alt={item.person} className='rounded-full' width={200} height={200}/> {/* Adjust width/height as appropriate for this larger image */}
                        </div>
                        </div>

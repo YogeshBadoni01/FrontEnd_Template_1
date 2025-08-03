@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 import "../globals.css"
+import Image from 'next/image'
 
 const ApplicationChoose = () => {
     const data =[
@@ -50,7 +51,13 @@ const ApplicationChoose = () => {
                         
                         {/* <div className="mb-[40px] h-40 w-40 transform skew-x-0 hover:skew-x-6 transition-transform duration-600"> */}
                         <div className="mb-[40px] ">
-                            <img src={`Image/Application/${item.imgSrc}.webp` } alt={`${item.imgSrc}`}  className='myskew' />
+                            {/* <img src={`Image/Application/${item.imgSrc}.webp` } alt={`${item.imgSrc}`}  className='myskew' /> */}
+                            <Image
+                             src={`/Image/Application/${item.imgSrc}.webp` } 
+                             alt={`${item.imgSrc}`} 
+                             width={110}
+                             height={110}
+                              className='myskew' />
                         </div>
                         <div className="mb-4 ">
                             <h4 className=' text-[16px] md:text-[18px] font-bold tracking-normal'> {item.heading}</h4>

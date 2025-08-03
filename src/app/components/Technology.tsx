@@ -4,6 +4,7 @@ import { FaAngleRight } from 'react-icons/fa6'
 import { IoCheckmark } from 'react-icons/io5'
 import { Theme } from '../Theme/Theme'
 import { Manrope } from 'next/font/google'
+import Image from 'next/image'
 
 const theme = Theme
 const manrope = Manrope({
@@ -32,7 +33,8 @@ const Technology = () => {
 
               </div>
               <div className=" lg:flex basis-full order-2 item-slide-up">
-                <img src='Image/Technology/Technology.webp'/>
+                {/* <img src='/Image/Technology/Technology.webp' alt="joinUs"/> */}
+                <Image src='/Image/Technology/Technology.webp' alt="joinUs" width={614} height={633}/>
               </div>
           </div>
       </div>
